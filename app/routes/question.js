@@ -17,6 +17,7 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
+
     updateQuestion(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
