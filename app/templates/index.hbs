@@ -1,0 +1,7 @@
+<h1>Welcome to Mock Quora</h1>
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.title}} by {{question.author}}</li>
+  {{/each}}
+</ul>
