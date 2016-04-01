@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   updateQuestionForm: false,
   actions: {
     updateQuestionForm() {
-      this.set('updateQuestionForm', true)
+      this.set('updateQuestionForm', true);
     },
     updateQuestion(question) {
       var params = {
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         category: this.get('category')
       };
       this.set('updateQuestionForm', false);
-      this.sendAction('updateQuestion', question, params)
+      this.sendAction('updateQuestion', question, params);
     }
   }
 });
