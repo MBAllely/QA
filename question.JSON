@@ -1,0 +1,26 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "title":,
+    "body": "San Francisco",
+    "category": "Estate",
+    "notes": 15,
+    "date": "1/14/2015",
+    "answers": []
+  }, {
+    "author": "Mike Teavee",
+    "title":,
+    "body": "Seattle",
+    "category": "Condo",
+    "notes": 1,
+    "date": "2/16/2016",
+    "answers": []
+  }, {
+    "author": "Violet Beauregarde",
+    "title":,
+    "body": "Portland",
+    "category": "Apartment",
+    "notes": 3,
+    "date": "3/15/2016",
+    "answers": []
+  }]
+}
