@@ -23,7 +23,9 @@
     {{else}}
       <button {{action 'updateAnswerForm'}}>Edit Answer</button>
     {{/if}}
-    <!-- delete answer button here -->
+
+    <button {{action 'deleteAnswer' answer}}>Delete this answer</button>
+
   {{/each}}
 
 
