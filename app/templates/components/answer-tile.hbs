@@ -3,6 +3,27 @@
     <h4>{{answer.author}}</h4>
     <p>{{answer.body}}</p>
 
+    {{#if updateAnswerForm}}
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="author">Author</label>
+            {{input value=author id="author" placeholder=answer.author}}
+          </div>
+
+          <div class="form-group">
+            <label for="body">Body</label>
+            {{input value=body id="body" placeholder=answer.body}}
+          </div>
+
+          <button {{action 'updateAnswer' answer}}>Save Answer</button>
+
+        </form>
+      </div>
+    {{else}}
+      <button {{action 'updateAnswerForm'}}>Edit Answer</button>
+    {{/if}}
+    <!-- delete answer button here -->
   {{/each}}
 
 
