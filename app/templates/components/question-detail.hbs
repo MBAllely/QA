@@ -1,10 +1,14 @@
 <div class="row">
   <div class="col-sm-8">
+
     <h2>{{question.title}}</h2>
     <h5>By {{question.author}}, <em>{{question.date}}</em></h5>
     <p>{{question.body}}</p>
     <p><em>Posted under <strong>{{question.category}}</strong></em></p>
-    <button type="btn btn-danger" {{action 'deleteQuestion' question}}>Delete this question</button>
+
+  </div>
+  <div class="col-sm-1">
+    <button class="btn btn-danger" {{action 'deleteQuestion' question}}><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>    
   </div>
   <br>
 </div>

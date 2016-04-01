@@ -21,10 +21,10 @@
         {{input value=category id="category"}}
       </div>
 
-      <button {{action 'saveQuestion'}}>Ask!</button>
+      <button class="btn-lg btn-primary" {{action 'saveQuestion'}}><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
 
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}}>Ask a Question</button>
+  <button  class="btn-lg btn-primary" {{action 'questionFormShow'}}>Ask a Question</button>
 {{/if}}
