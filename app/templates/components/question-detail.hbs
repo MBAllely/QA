@@ -4,7 +4,7 @@
     <h5>By {{question.author}}, <em>{{question.date}}</em></h5>
     <p>{{question.body}}</p>
     <p><em>Posted under <strong>{{question.category}}</strong></em></p>
+    <button type="btn btn-danger" {{action 'deleteQuestion' question}}>Delete this question</button>
   </div>
   <br>
-  <button type="btn btn-danger" {{action 'deleteQuestion' question}}>Delete this question</button>
 </div>
