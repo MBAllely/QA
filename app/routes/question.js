@@ -49,11 +49,7 @@ export default Ember.Route.extend({
     },
 
     deleteAnswer(answer) {
-      var question = this.get('answer.question');
-      console.log(question);
-      answer.destroyRecord().then(function() {
-        question.save();
-      });
+      answer.destroyRecord();
       this.transitionTo('question');
     }
   }

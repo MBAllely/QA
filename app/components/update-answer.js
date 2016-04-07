@@ -10,16 +10,14 @@ export default Ember.Component.extend({
       }
     },
     updateAnswerForm() {
-      this.set('updateAnswerForm', true);
+      this.toggleProperty('updateAnswerForm');
     },
-
     updateAnswer(answer) {
       var params = {
         answer_author: this.get('answer_author'),
         notes: this.get('notes'),
         question: this.get('question')
       };
-      console.log(params);
       this.set('updateAnswerForm', false);
       this.sendAction('updateAnswer', answer, params);
     }
