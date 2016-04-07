@@ -10,8 +10,8 @@ export default Ember.Component.extend({
     saveAnswer() {
       var params = {
         question: this.get('question'),
-        author: this.get('author') ? this.get('author'): "",
-        body: this.get('body') ? this.get('body'): "",
+        answer_author: this.get('answer_author') ? this.get('answer_author'): "",
+        notes: this.get('notes') ? this.get('notes'): "",
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

@@ -2,13 +2,13 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author" class="form-control"}}
+        <label for="answer_author">Author</label>
+        {{input value=answer_author id="answer_author" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="body">Body</label>
-        {{input value=body id="body" class="form-control"}}
+        <label for="notes">Body</label>
+        {{input value=notes id="notes" class="form-control"}}
       </div>
 
       <button class="btn btn-primary" {{action 'saveAnswer'}}><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
